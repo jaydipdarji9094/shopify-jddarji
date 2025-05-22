@@ -13,11 +13,28 @@
       "type": "main-page",
       "settings": {
         "padding_top": 28,
-        "padding_bottom": 28
+        "padding_bottom": 28,
+        "background": "linear-gradient(0deg, rgba(13, 25, 253, 1), rgba(51, 25, 253, 1) 50%, rgba(98, 36, 253, 1) 50%, rgba(0, 55, 253, 1) 100%, rgba(0, 0, 0, 1) 100%)"
+      }
+    },
+    "video_qq4EwA": {
+      "type": "video",
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "heading": "Video",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "video_qq4EwA"
   ]
 }
