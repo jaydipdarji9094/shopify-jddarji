@@ -65,9 +65,15 @@
       </label>
     </div>
     <div class="field">
-      <input type="hidden" name="customer[metafields][custom.gender]" value="false">
-      <input type="checkbox" name="customer[metafields][custom.gender]" value="true" id="gender_check">
-      <label for="gender_check">Identify as Male (true/false)</label>
+      <label>Gender</label><br>
+      <input type="radio" name="customer[metafields][custom.gender]" value="male" id="gender_male">
+      <label for="gender_male">Male</label><br>
+
+      <input type="radio" name="customer[metafields][custom.gender]" value="female" id="gender_female">
+      <label for="gender_female">Female</label><br>
+
+      <input type="radio" name="customer[metafields][custom.gender]" value="other" id="gender_other">
+      <label for="gender_other">Other</label>
     </div>
     <div class="field">
       <input
