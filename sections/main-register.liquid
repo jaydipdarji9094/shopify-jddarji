@@ -65,15 +65,7 @@
       </label>
     </div>
     <div class="field">
-      <label>Gender</label><br>
-      <input type="radio" name="customer[metafields][custom.gender]" value="male" id="gender_male">
-      <label for="gender_male">Male</label><br>
-
-      <input type="radio" name="customer[metafields][custom.gender]" value="female" id="gender_female">
-      <label for="gender_female">Female</label><br>
-
-      <input type="radio" name="customer[metafields][custom.gender]" value="other" id="gender_other">
-      <label for="gender_other">Other</label>
+      {{ customer.metafields.custom.gender }}
     </div>
     <div class="field">
       <input
