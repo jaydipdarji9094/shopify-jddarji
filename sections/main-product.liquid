@@ -180,16 +180,17 @@
                   {%- endif -%}
                 {%- endif -%}
               </p>
-              {% if product.metafields.custom.name %}
-                <p><strong>Name:</strong> {{ product.metafields.custom.name }}</p>
-              {% endif %}
 
-              {% if product.metafields.custom.custom_email %}
-                <p><strong>Email:</strong> {{ product.metafields.custom.custom_email }}</p>
-              {% endif %}
             {%- when 'description' -%}
               {%- if product.description != blank -%}
                 <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
+                  {% if product.metafields.custom.name %}
+                    <p><strong>Name:</strong> {{ product.metafields.custom.name }}</p>
+                  {% endif %}
+
+                  {% if product.metafields.custom.custom_email %}
+                    <p><strong>Email:</strong> {{ product.metafields.custom.custom_email }}</p>
+                  {% endif %}
                   {{ product.description }}
                 </div>
               {%- endif -%}
